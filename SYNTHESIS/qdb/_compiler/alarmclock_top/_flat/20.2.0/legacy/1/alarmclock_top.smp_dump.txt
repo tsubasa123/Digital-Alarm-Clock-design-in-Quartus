@@ -1,0 +1,12 @@
+
+State Machine - ALARM_CONTROLLER|present_state
+Name present_state.SET_CURRENT_TIME present_state.SET_ALARM_TIME present_state.KEY_ENTRY present_state.SHOW_ALARM present_state.KEY_STORED present_state.KEY_WAITED present_state.SHOW_TIME 
+present_state.SHOW_TIME 0 0 0 0 0 0 0 
+present_state.KEY_WAITED 0 0 0 0 0 1 1 
+present_state.KEY_STORED 0 0 0 0 1 0 1 
+present_state.SHOW_ALARM 0 0 0 1 0 0 1 
+present_state.KEY_ENTRY 0 0 1 0 0 0 1 
+present_state.SET_ALARM_TIME 0 1 0 0 0 0 1 
+present_state.SET_CURRENT_TIME 1 0 0 0 0 0 1 
+
+State Machine - Summary
