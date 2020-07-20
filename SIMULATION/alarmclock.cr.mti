@@ -1,0 +1,64 @@
+/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/keyreg.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/keyreg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module key_reg
+
+Top level modules:
+	key_reg
+
+} {} {}} /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/TESTBENCH/alarmclock_TB.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/TESTBENCH/alarmclock_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module alarmclock_TB
+
+Top level modules:
+	alarmclock_TB
+
+} {} {}} /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/counter.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module alarmclock_top
+
+Top level modules:
+	alarmclock_top
+
+} {} {}} /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmController.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmController.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module alarm_controller_fsm
+
+Top level modules:
+	alarm_controller_fsm
+
+} {} {}} /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/timingGen.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/timingGen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module timing_gen
+
+Top level modules:
+	timing_gen
+
+} {} {}} /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriverfunc.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriverfunc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module display_driver_func
+
+Top level modules:
+	display_driver_func
+
+} {} {}} /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriver.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriver.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module display_driver
+
+Top level modules:
+	display_driver
+
+} {} {}} /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmRegister.v {1 {vlog -work work -stats=none /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmRegister.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1_3 Compiler 2020.04 Apr 27 2020
+-- Compiling module alarm_register
+
+Top level modules:
+	alarm_register
+
+} {} {}}

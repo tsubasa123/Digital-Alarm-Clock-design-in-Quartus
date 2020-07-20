@@ -1,0 +1,219 @@
+m255
+K4
+z2
+!s11f vlog 2020.1_3 2020.04, Apr 27 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/himangshu/ModelSim/modelsim_ase/bin
+valarm_controller_fsm
+Z0 !s110 1595265947
+!i10b 1
+!s100 3N0BCN5a`[6cDjKffeNeB2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Iil?eoIPeB^DhT=X]COAXJ2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION
+w1595113548
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmController.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmController.v
+!i122 18
+L0 1 135
+Z4 OV;L;2020.1_3;71
+r1
+!s85 0
+31
+Z5 !s108 1595265947.000000
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmController.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmController.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+valarm_register
+R0
+!i10b 1
+!s100 =9B`=aDoUQKcnHfV>VS5a3
+R1
+IJWMo270cn1EBz5Wg5P1iK3
+R2
+R3
+w1595171609
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmRegister.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmRegister.v
+!i122 19
+L0 1 49
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmRegister.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmRegister.v|
+!i113 1
+R6
+R7
+valarmclock_TB
+Z8 !s110 1595265948
+!i10b 1
+!s100 _:WN?l]cjZl5GhEDIJcMM2
+R1
+IAKcN8MHOFZJ]HoIlCBa8h2
+R2
+R3
+w1595265838
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/TESTBENCH/alarmclock_TB.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/TESTBENCH/alarmclock_TB.v
+!i122 25
+L0 1 144
+R4
+r1
+!s85 0
+31
+Z9 !s108 1595265948.000000
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/TESTBENCH/alarmclock_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/TESTBENCH/alarmclock_TB.v|
+!i113 1
+R6
+R7
+nalarmclock_@t@b
+valarmclock_top
+R0
+!i10b 1
+!s100 2O97I3SFC;9C;X8b[4d?P2
+R1
+I5];0nW:7T2AmHA:dQ21@Q2
+R2
+R3
+w1595193238
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v
+!i122 17
+L0 1 121
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v|
+!i113 1
+R6
+R7
+vcounter
+R0
+!i10b 1
+!s100 afjX>c^kA_1k`SC9DZkE80
+R1
+If<Vn[ME?jodjE9_Hgh:=;3
+R2
+R3
+w1595179022
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/counter.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/counter.v
+!i122 20
+L0 1 80
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/counter.v|
+!i113 1
+R6
+R7
+vdisplay_driver
+R0
+!i10b 1
+!s100 3E[]PJjZl5i48Qd9o;mnF0
+R1
+I;Cf_kfSXnUNR]O@P`h5N40
+R2
+R3
+w1595179983
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriver.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriver.v
+!i122 21
+L0 1 76
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriver.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriver.v|
+!i113 1
+R6
+R7
+vdisplay_driver_func
+R0
+!i10b 1
+!s100 A4EkHB]e<AX39L]n=naAm2
+R1
+ID2U16I3l@ljJ4Ba0`g:[A2
+R2
+R3
+w1595193954
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriverfunc.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriverfunc.v
+!i122 22
+L0 1 62
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriverfunc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriverfunc.v|
+!i113 1
+R6
+R7
+vkey_reg
+R8
+!i10b 1
+!s100 Ign<``m<Tb:1dIA>8meL=1
+R1
+IliRKlFXP^Hi_F^ad<>QzQ0
+R2
+R3
+w1595113465
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/keyreg.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/keyreg.v
+!i122 23
+L0 1 42
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/keyreg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/keyreg.v|
+!i113 1
+R6
+R7
+vtiming_gen
+R8
+!i10b 1
+!s100 cX:JdKn]UJXTme>fbU?RP2
+R1
+I1;I7S9Zo7j3f87bJl456Z2
+R2
+R3
+w1595193498
+8/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/timingGen.v
+F/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/timingGen.v
+!i122 24
+L0 1 70
+R4
+r1
+!s85 0
+31
+R9
+!s107 /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/timingGen.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/timingGen.v|
+!i113 1
+R6
+R7

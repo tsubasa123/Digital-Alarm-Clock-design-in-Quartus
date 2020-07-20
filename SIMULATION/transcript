@@ -1,0 +1,97 @@
+# Loading project alarmclock
+# Compile of alarmclock_TB.v failed with 3 errors.
+# Compile of alarmclock_top_module.v was successful.
+# Compile of AlarmController.v was successful.
+# Compile of AlarmRegister.v was successful.
+# Compile of counter.v was successful.
+# Compile of displaydriver.v was successful.
+# Compile of displaydriverfunc.v was successful.
+# Compile of keyreg.v was successful.
+# Compile of timingGen.v was successful.
+# 9 compiles, 1 failed with 3 errors.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Error opening /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v
+# Path name '/home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/SIMULATION/(vlog-13069) /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_TB.v' doesn't exist.
+# Compile of alarmclock_TB.v was successful.
+# Compile of alarmclock_top_module.v was successful.
+# Compile of AlarmController.v was successful.
+# Compile of AlarmRegister.v was successful.
+# Compile of counter.v was successful.
+# Compile of displaydriver.v was successful.
+# Compile of displaydriverfunc.v was successful.
+# Compile of keyreg.v was successful.
+# Compile of timingGen.v was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of alarmclock_top_module.v was successful.
+# Compile of AlarmController.v was successful.
+# Compile of AlarmRegister.v was successful.
+# Compile of counter.v was successful.
+# Compile of displaydriver.v was successful.
+# Compile of displaydriverfunc.v was successful.
+# Compile of keyreg.v was successful.
+# Compile of timingGen.v was successful.
+# Compile of alarmclock_TB.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.alarmclock_TB
+# vsim work.alarmclock_TB 
+# Start time: 22:56:00 on Jul 20,2020
+# Loading work.alarmclock_TB
+# Loading work.alarmclock_top
+# Loading work.timing_gen
+# Loading work.alarm_controller_fsm
+# Loading work.key_reg
+# Loading work.counter
+# Loading work.alarm_register
+# Loading work.display_driver
+# Loading work.display_driver_func
+add wave -r sim:/alarmclock_TB/*
+run -all
+#                    0    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =0>>> DISPLAY_MS_MIN =0>>> DISPLAY_LS_MIN=0
+#                   11    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =0>>> DISPLAY_MS_MIN =0>>> DISPLAY_LS_MIN=1
+#                   13    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =0>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=1
+#                   15    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =0>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=a
+#                   17    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =0>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=1
+#                   19    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=1
+#                   23    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=a
+#                   25    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=2
+#                   27    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =2>>> DISPLAY_LS_MIN=2
+#                   31    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =2>>> DISPLAY_LS_MIN=a
+#                   33    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =2>>> DISPLAY_LS_MIN=3
+#                   35    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =2>>> DISPLAY_MS_MIN =3>>> DISPLAY_LS_MIN=3
+#                   39    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =2>>> DISPLAY_MS_MIN =3>>> DISPLAY_LS_MIN=a
+#                   41    DISPLAY_MS_HR =0 >>> DISPLAY_LS_HR =0>>> DISPLAY_MS_MIN =0>>> DISPLAY_LS_MIN=0
+#                   43    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =2>>> DISPLAY_MS_MIN =3>>> DISPLAY_LS_MIN=a
+#                   45    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =2>>> DISPLAY_MS_MIN =3>>> DISPLAY_LS_MIN=1
+#                   47    DISPLAY_MS_HR =2 >>> DISPLAY_LS_HR =3>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=1
+#                   49    DISPLAY_MS_HR =2 >>> DISPLAY_LS_HR =3>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=a
+#                   51    DISPLAY_MS_HR =2 >>> DISPLAY_LS_HR =3>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=1
+#                   53    DISPLAY_MS_HR =3 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=1
+#                   57    DISPLAY_MS_HR =3 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=a
+#                   59    DISPLAY_MS_HR =3 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =1>>> DISPLAY_LS_MIN=3
+#                   61    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =3>>> DISPLAY_LS_MIN=3
+#                   65    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =3>>> DISPLAY_LS_MIN=a
+#                   67    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =1>>> DISPLAY_MS_MIN =3>>> DISPLAY_LS_MIN=0
+#                   69    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =3>>> DISPLAY_MS_MIN =0>>> DISPLAY_LS_MIN=0
+#                   73    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =3>>> DISPLAY_MS_MIN =0>>> DISPLAY_LS_MIN=a
+#                   75    DISPLAY_MS_HR =1 >>> DISPLAY_LS_HR =2>>> DISPLAY_MS_MIN =3>>> DISPLAY_LS_MIN=a
+# ** Note: $finish    : /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/TESTBENCH/alarmclock_TB.v(134)
+#    Time: 24170 ps  Iteration: 1  Instance: /alarmclock_TB
+# 1
+# Break in Module alarmclock_TB at /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/TESTBENCH/alarmclock_TB.v line 134
+# End time: 22:58:42 on Jul 20,2020, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 9
