@@ -1,0 +1,216 @@
+Fitter Route Stage Report for alarmclock_top
+Mon Jul 20 02:58:34 2020
+Quartus Prime Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Delay Chain Summary
+  3. Routing Usage Summary
+  4. Route Messages
+  5. Estimated Delay Added for Hold Timing Summary
+  6. Estimated Delay Added for Hold Timing Details
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                           ;
++--------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name         ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++--------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; alarm_sound  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_hour[0]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_hour[1]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_hour[2]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_hour[3]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_hour[4]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_hour[5]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_hour[6]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_hour[7]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_hour[0]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_hour[1]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_hour[2]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_hour[3]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_hour[4]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_hour[5]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_hour[6]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_hour[7]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_min[0]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_min[1]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_min[2]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_min[3]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_min[4]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_min[5]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_min[6]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ms_min[7]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_min[0]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_min[1]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_min[2]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_min[3]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_min[4]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_min[5]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_min[6]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; ls_min[7]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; clock        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; reset        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fast_watch   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; alarm_button ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; key[0]       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; key[1]       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; key[2]       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; key[3]       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; time_button  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++--------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++--------------------------------------------------------+
+; Routing Usage Summary                                  ;
++------------------------------+-------------------------+
+; Routing Resource Type        ; Usage                   ;
++------------------------------+-------------------------+
+; Block interconnects          ; 315 / 664,374 ( < 1 % ) ;
+; C27 interconnects            ; 1 / 12,769 ( < 1 % )    ;
+; C4 interconnects             ; 160 / 514,392 ( < 1 % ) ;
+; Direct links                 ; 114 / 664,374 ( < 1 % ) ;
+; Global clocks                ; 1 / 32 ( 3 % )          ;
+; Periphery clocks             ; 0 / 410 ( 0 % )         ;
+; R3 interconnects             ; 87 / 246,936 ( < 1 % )  ;
+; R32 interconnects            ; 0 / 28,257 ( 0 % )      ;
+; R32/C27 interconnect drivers ; 1 / 74,920 ( < 1 % )    ;
+; R6 interconnects             ; 95 / 527,108 ( < 1 % )  ;
+; Regional clock lefts         ; 0 / 8 ( 0 % )           ;
+; Regional clock out bottoms   ; 0 / 8 ( 0 % )           ;
+; Regional clock out tops      ; 0 / 8 ( 0 % )           ;
+; Regional clock rights        ; 0 / 8 ( 0 % )           ;
+; Regional clocks              ; 0 / 8 ( 0 % )           ;
+; Spine buffers                ; 1 / 220 ( < 1 % )       ;
+; Spine clocks                 ; 1 / 330 ( < 1 % )       ;
+; Spine feedthroughs           ; 0 / 224 ( 0 % )         ;
++------------------------------+-------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+    Info: Processing started: Mon Jul 20 02:57:00 2020
+    Info: System process ID: 16180
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off alarmclock_top -c alarmclock_top
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = alarmclock_top
+Info: Revision = alarmclock_top
+Info (170193): Fitter routing operations beginning
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+Info (11888): Total time spent on timing analysis during Routing is 0.10 seconds.
+Info (16607): Fitter routing operations ending: elapsed time is 00:00:17
+
+
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+; clock           ; clock                ; 26.2              ;
++-----------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                         ;
++-------------------------------------------------+-------------------------------------------------+-------------------+
+; Source Register                                 ; Destination Register                            ; Delay Added in ns ;
++-------------------------------------------------+-------------------------------------------------+-------------------+
+; ALARM_CONTROLLER|present_state.KEY_WAITED       ; ALARM_CONTROLLER|count2[2]                      ; 0.315             ;
+; COUNTER|current_time_ls_min[2]                  ; COUNTER|current_time_ls_min[3]                  ; 0.314             ;
+; KEY_REGISTER|key_buffer_ms_min[1]               ; KEY_REGISTER|key_buffer_ls_hr[1]                ; 0.287             ;
+; KEY_REGISTER|key_buffer_ls_hr[2]                ; COUNTER|current_time_ls_hr[2]                   ; 0.283             ;
+; ALARM_CONTROLLER|count1[0]                      ; ALARM_CONTROLLER|count1[3]                      ; 0.281             ;
+; KEY_REGISTER|key_buffer_ls_hr[1]                ; COUNTER|current_time_ls_hr[1]                   ; 0.280             ;
+; TIMING_GENERATOR|clock_count[12]                ; TIMING_GENERATOR|one_minute_reg                 ; 0.279             ;
+; COUNTER|current_time_ls_hr[2]                   ; COUNTER|current_time_ls_hr[3]                   ; 0.271             ;
+; KEY_REGISTER|key_buffer_ms_hr[3]                ; COUNTER|current_time_ms_hr[3]                   ; 0.270             ;
+; ALARM_CONTROLLER|present_state.KEY_STORED       ; ALARM_CONTROLLER|count1[2]                      ; 0.266             ;
+; ALARM_CONTROLLER|count1[2]                      ; ALARM_CONTROLLER|count1[3]                      ; 0.265             ;
+; KEY_REGISTER|key_buffer_ls_min[0]               ; COUNTER|current_time_ls_min[0]                  ; 0.253             ;
+; COUNTER|current_time_ls_min[1]                  ; COUNTER|current_time_ls_min[3]                  ; 0.250             ;
+; KEY_REGISTER|key_buffer_ms_hr[0]                ; COUNTER|current_time_ms_hr[0]                   ; 0.249             ;
+; COUNTER|current_time_ls_min[0]                  ; COUNTER|current_time_ls_min[3]                  ; 0.247             ;
+; KEY_REGISTER|key_buffer_ms_hr[2]                ; COUNTER|current_time_ms_hr[2]                   ; 0.245             ;
+; KEY_REGISTER|key_buffer_ms_hr[1]                ; COUNTER|current_time_ms_hr[1]                   ; 0.244             ;
+; ALARM_CONTROLLER|count1[1]                      ; ALARM_CONTROLLER|count1[0]                      ; 0.239             ;
+; ALARM_CONTROLLER|count2[3]                      ; ALARM_CONTROLLER|count2[1]                      ; 0.239             ;
+; ALARM_CONTROLLER|present_state.KEY_ENTRY        ; ALARM_CONTROLLER|present_state.SET_CURRENT_TIME ; 0.239             ;
+; KEY_REGISTER|key_buffer_ls_min[1]               ; COUNTER|current_time_ls_min[1]                  ; 0.238             ;
+; ALARM_CONTROLLER|present_state.SHOW_TIME        ; ALARM_CONTROLLER|present_state.SHOW_ALARM       ; 0.236             ;
+; COUNTER|current_time_ms_min[0]                  ; COUNTER|current_time_ms_min[1]                  ; 0.236             ;
+; COUNTER|current_time_ls_min[3]                  ; COUNTER|current_time_ls_min[1]                  ; 0.234             ;
+; TIMING_GENERATOR|clock_count[9]                 ; TIMING_GENERATOR|one_second                     ; 0.231             ;
+; ALARM_CONTROLLER|count2[1]                      ; ALARM_CONTROLLER|count2[0]                      ; 0.230             ;
+; ALARM_CONTROLLER|count2[0]                      ; ALARM_CONTROLLER|count2[3]                      ; 0.222             ;
+; COUNTER|current_time_ms_min[1]                  ; COUNTER|current_time_ms_min[2]                  ; 0.219             ;
+; KEY_REGISTER|key_buffer_ls_hr[3]                ; COUNTER|current_time_ls_hr[3]                   ; 0.215             ;
+; ALARM_CONTROLLER|count2[2]                      ; ALARM_CONTROLLER|count2[0]                      ; 0.214             ;
+; TIMING_GENERATOR|one_minute_reg                 ; COUNTER|current_time_ls_hr[0]                   ; 0.207             ;
+; KEY_REGISTER|key_buffer_ms_min[2]               ; KEY_REGISTER|key_buffer_ls_hr[2]                ; 0.205             ;
+; COUNTER|current_time_ms_min[2]                  ; COUNTER|current_time_ms_min[2]                  ; 0.198             ;
+; KEY_REGISTER|key_buffer_ms_min[0]               ; ALARM_REGISTER|alarm_time_ms_min[0]             ; 0.197             ;
+; ALARM_CONTROLLER|present_state.SET_CURRENT_TIME ; TIMING_GENERATOR|one_minute_reg                 ; 0.190             ;
+; TIMING_GENERATOR|one_second                     ; ALARM_CONTROLLER|count2[1]                      ; 0.187             ;
+; COUNTER|current_time_ms_min[3]                  ; COUNTER|current_time_ms_min[1]                  ; 0.186             ;
+; ALARM_CONTROLLER|count1[3]                      ; ALARM_CONTROLLER|count1[0]                      ; 0.182             ;
+; KEY_REGISTER|key_buffer_ls_hr[0]                ; COUNTER|current_time_ls_hr[0]                   ; 0.176             ;
+; KEY_REGISTER|key_buffer_ms_min[3]               ; KEY_REGISTER|key_buffer_ls_hr[3]                ; 0.159             ;
+; KEY_REGISTER|key_buffer_ls_min[2]               ; ALARM_REGISTER|alarm_time_ls_min[2]             ; 0.158             ;
+; TIMING_GENERATOR|clock_count[11]                ; TIMING_GENERATOR|one_minute_reg                 ; 0.148             ;
+; KEY_REGISTER|key_buffer_ls_min[3]               ; ALARM_REGISTER|alarm_time_ls_min[3]             ; 0.119             ;
+; TIMING_GENERATOR|clock_count[1]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.063             ;
+; TIMING_GENERATOR|clock_count[8]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.061             ;
+; TIMING_GENERATOR|clock_count[5]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.061             ;
+; TIMING_GENERATOR|clock_count[6]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.061             ;
+; TIMING_GENERATOR|clock_count[2]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.061             ;
+; TIMING_GENERATOR|clock_count[13]                ; TIMING_GENERATOR|one_minute_reg                 ; 0.061             ;
+; ALARM_CONTROLLER|present_state.SHOW_ALARM       ; ALARM_CONTROLLER|present_state.SHOW_TIME        ; 0.052             ;
+; TIMING_GENERATOR|clock_count[10]                ; TIMING_GENERATOR|one_minute_reg                 ; 0.047             ;
+; TIMING_GENERATOR|clock_count[7]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.047             ;
+; TIMING_GENERATOR|clock_count[4]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.047             ;
+; TIMING_GENERATOR|clock_count[3]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.047             ;
+; TIMING_GENERATOR|clock_count[0]                 ; TIMING_GENERATOR|one_minute_reg                 ; 0.047             ;
+; COUNTER|current_time_ls_hr[1]                   ; COUNTER|current_time_ls_hr[2]                   ; 0.042             ;
+; ALARM_CONTROLLER|present_state.SET_ALARM_TIME   ; ALARM_CONTROLLER|present_state.SHOW_TIME        ; 0.038             ;
+; COUNTER|current_time_ls_hr[3]                   ; COUNTER|current_time_ls_hr[2]                   ; 0.030             ;
+; COUNTER|current_time_ms_hr[3]                   ; COUNTER|current_time_ls_hr[2]                   ; 0.030             ;
+; COUNTER|current_time_ms_hr[2]                   ; COUNTER|current_time_ls_hr[2]                   ; 0.030             ;
+; COUNTER|current_time_ms_hr[1]                   ; COUNTER|current_time_ls_hr[2]                   ; 0.030             ;
+; COUNTER|current_time_ms_hr[0]                   ; COUNTER|current_time_ls_hr[2]                   ; 0.030             ;
+; COUNTER|current_time_ls_hr[0]                   ; COUNTER|current_time_ls_hr[2]                   ; 0.030             ;
++-------------------------------------------------+-------------------------------------------------+-------------------+
+Note: This table only shows the top 63 path(s) that have the largest delay added for hold.
+
+

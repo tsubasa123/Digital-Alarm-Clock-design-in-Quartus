@@ -1,0 +1,453 @@
+Synthesis report
+Mon Jul 20 02:56:59 2020
+Quartus Prime Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Synthesis Summary
+  2. Synthesis Settings
+  3. Synthesis Source Files Read
+  4. Synthesis Partition Summary
+  5. Parameter Settings for User Entity Instance: ALARM_CONTROLLER
+  6. Parameter Settings for User Entity Instance: DISPLAY|MS_HR
+  7. Parameter Settings for User Entity Instance: DISPLAY|LS_HR
+  8. Parameter Settings for User Entity Instance: DISPLAY|MS_MIN
+  9. Parameter Settings for User Entity Instance: DISPLAY|LS_MIN
+ 10. Partition "root_partition" Resource Utilization by Entity
+ 11. State Machine - ALARM_CONTROLLER|present_state
+ 12. State Machine - Summary
+ 13. Registers Removed During Synthesis
+ 14. General Register Statistics for Partition "root_partition"
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Post-Synthesis Netlist Statistics for Partition "root_partition"
+ 17. Synthesis Resource Usage Summary for Partition "root_partition"
+ 18. Synthesis Messages
+
+
+
++---------------------------------------------------------------+
+; Synthesis Summary                                             ;
++-----------------------+---------------------------------------+
+; Synthesis Status      ; Successful - Mon Jul 20 02:56:58 2020 ;
+; Revision Name         ; alarmclock_top                        ;
+; Top-level Entity Name ; alarmclock_top                        ;
+; Family                ; Cyclone 10 GX                         ;
++-----------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Settings                                                                                                        ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 10CX220YF780I5G    ;                    ;
+; Top-level entity name                                                           ; alarmclock_top     ; alarmclock_top     ;
+; Family name                                                                     ; Cyclone 10 GX      ; Cyclone 10 GX      ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Design Assistant include IP blocks                                              ; Off                ; Off                ;
+; High fanout net threshold for RAM inference                                     ; 15                 ; 15                 ;
+; Design Assistant limit on reported violations per rule                          ; 500                ; 500                ;
+; Optimization Mode                                                               ; Balanced           ; Balanced           ;
+; Allow Register Merging                                                          ; On                 ; On                 ;
+; Allow Register Duplication                                                      ; On                 ; On                 ;
+; Allow Register Retiming                                                         ; On                 ; On                 ;
+; Allow RAM Retiming                                                              ; Off                ; Off                ;
+; Allow DSP Retiming                                                              ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Auto               ; Auto               ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Number of Protected Registers Reported in Synthesis Report                      ; 100                ; 100                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
+; Disable DSP Negate Inferencing                                                  ; Off                ; Off                ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Size of the Latch Report                                                        ; 100                ; 100                ;
+; Enable State Machines Inference                                                 ; On                 ; On                 ;
+; Enable formal verification support during compilation                           ; Off                ; Off                ;
+; Size of the PR Initial Conditions Report                                        ; 100                ; 100                ;
+; Number of Registers with Ignored Power-Up Settings Reported in Synthesis Report ; 500                ; 500                ;
+; Report PR Initial Values as Errors                                              ; Off                ; Off                ;
+; Fractal Synthesis                                                               ; Off                ; Off                ;
+; Synthesis Available Resource Multiplier                                         ; 1                  ; 1                  ;
+; Message Level for Unconnected Output Ports                                      ; Off                ; Off                ;
+; Pack Barrelshifters into Carry Chains for Better Area                           ; Auto               ; Auto               ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Source Files Read                                                                                                                                                                ;
++----------------------------------+------------------------+-----------------------------------------------------------------------------------+---------+----------------------------------+
+; File Name with User-Entered Path ; File Type              ; File Name with Absolute Path                                                      ; Library ; MD5                              ;
++----------------------------------+------------------------+-----------------------------------------------------------------------------------+---------+----------------------------------+
+; ../RTL/timingGen.v               ; User Verilog HDL File  ; /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/timingGen.v             ;         ; e0f26096377e5eb4d9f773dd05d0320d ;
+; ../RTL/keyreg.v                  ; User Verilog HDL File  ; /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/keyreg.v                ;         ; fa7a6a0c8e64b050f649fc36874d443e ;
+; ../RTL/displaydriverfunc.v       ; User Verilog HDL File  ; /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriverfunc.v     ;         ; a047a5c296e5e2d8ecfc61cdc5f9968d ;
+; ../RTL/displaydriver.v           ; User Verilog HDL File  ; /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/displaydriver.v         ;         ; 3e761456f6dbaf8fccb1e46a188c8bbb ;
+; ../RTL/counter.v                 ; User Verilog HDL File  ; /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/counter.v               ;         ; a788cda994ff340d683386cc250d61f3 ;
+; ../RTL/AlarmRegister.v           ; User Verilog HDL File  ; /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmRegister.v         ;         ; a23d9f34601c8d71eab357b5d06501d8 ;
+; ../RTL/AlarmController.v         ; User Verilog HDL File  ; /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/AlarmController.v       ;         ; 77eb45325d7a8587e6ae7eed3f4d9e9e ;
+; ../RTL/alarmclock_top_module.v   ; User Verilog HDL File  ; /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v ;         ; 6213b78030f8b169490fa0ce0ba6aadd ;
++----------------------------------+------------------------+-----------------------------------------------------------------------------------+---------+----------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Synthesis Partition Summary                                                                ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+; Partition Name ; Hierarchy Path ; Type    ; Preservation ; Empty ; Partition Database File ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+; root_partition ; |              ; Default ;              ;       ;                         ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALARM_CONTROLLER ;
++------------------+-------+------------------------------------+
+; Parameter Name   ; Value ; Type                               ;
++------------------+-------+------------------------------------+
+; SHOW_TIME        ; 000   ; Unsigned Binary                    ;
+; KEY_ENTRY        ; 001   ; Unsigned Binary                    ;
+; KEY_STORED       ; 010   ; Unsigned Binary                    ;
+; SHOW_ALARM       ; 011   ; Unsigned Binary                    ;
+; SET_ALARM_TIME   ; 100   ; Unsigned Binary                    ;
+; SET_CURRENT_TIME ; 101   ; Unsigned Binary                    ;
+; KEY_WAITED       ; 110   ; Unsigned Binary                    ;
+; NOT_PRESSED      ; 10    ; Signed Integer                     ;
++------------------+-------+------------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DISPLAY|MS_HR ;
++----------------+----------+--------------------------------+
+; Parameter Name ; Value    ; Type                           ;
++----------------+----------+--------------------------------+
+; ZERO           ; 00110000 ; Unsigned Binary                ;
+; ONE            ; 00110001 ; Unsigned Binary                ;
+; TWO            ; 00110010 ; Unsigned Binary                ;
+; THREE          ; 00110011 ; Unsigned Binary                ;
+; FOUR           ; 00110100 ; Unsigned Binary                ;
+; FIVE           ; 00110101 ; Unsigned Binary                ;
+; SIX            ; 00110110 ; Unsigned Binary                ;
+; SEVEN          ; 00110111 ; Unsigned Binary                ;
+; EIGHT          ; 00111000 ; Unsigned Binary                ;
+; NINE           ; 00111001 ; Unsigned Binary                ;
+; ERROR          ; 00111010 ; Unsigned Binary                ;
++----------------+----------+--------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DISPLAY|LS_HR ;
++----------------+----------+--------------------------------+
+; Parameter Name ; Value    ; Type                           ;
++----------------+----------+--------------------------------+
+; ZERO           ; 00110000 ; Unsigned Binary                ;
+; ONE            ; 00110001 ; Unsigned Binary                ;
+; TWO            ; 00110010 ; Unsigned Binary                ;
+; THREE          ; 00110011 ; Unsigned Binary                ;
+; FOUR           ; 00110100 ; Unsigned Binary                ;
+; FIVE           ; 00110101 ; Unsigned Binary                ;
+; SIX            ; 00110110 ; Unsigned Binary                ;
+; SEVEN          ; 00110111 ; Unsigned Binary                ;
+; EIGHT          ; 00111000 ; Unsigned Binary                ;
+; NINE           ; 00111001 ; Unsigned Binary                ;
+; ERROR          ; 00111010 ; Unsigned Binary                ;
++----------------+----------+--------------------------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DISPLAY|MS_MIN ;
++----------------+----------+---------------------------------+
+; Parameter Name ; Value    ; Type                            ;
++----------------+----------+---------------------------------+
+; ZERO           ; 00110000 ; Unsigned Binary                 ;
+; ONE            ; 00110001 ; Unsigned Binary                 ;
+; TWO            ; 00110010 ; Unsigned Binary                 ;
+; THREE          ; 00110011 ; Unsigned Binary                 ;
+; FOUR           ; 00110100 ; Unsigned Binary                 ;
+; FIVE           ; 00110101 ; Unsigned Binary                 ;
+; SIX            ; 00110110 ; Unsigned Binary                 ;
+; SEVEN          ; 00110111 ; Unsigned Binary                 ;
+; EIGHT          ; 00111000 ; Unsigned Binary                 ;
+; NINE           ; 00111001 ; Unsigned Binary                 ;
+; ERROR          ; 00111010 ; Unsigned Binary                 ;
++----------------+----------+---------------------------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DISPLAY|LS_MIN ;
++----------------+----------+---------------------------------+
+; Parameter Name ; Value    ; Type                            ;
++----------------+----------+---------------------------------+
+; ZERO           ; 00110000 ; Unsigned Binary                 ;
+; ONE            ; 00110001 ; Unsigned Binary                 ;
+; TWO            ; 00110010 ; Unsigned Binary                 ;
+; THREE          ; 00110011 ; Unsigned Binary                 ;
+; FOUR           ; 00110100 ; Unsigned Binary                 ;
+; FIVE           ; 00110101 ; Unsigned Binary                 ;
+; SIX            ; 00110110 ; Unsigned Binary                 ;
+; SEVEN          ; 00110111 ; Unsigned Binary                 ;
+; EIGHT          ; 00111000 ; Unsigned Binary                 ;
+; NINE           ; 00111001 ; Unsigned Binary                 ;
+; ERROR          ; 00111010 ; Unsigned Binary                 ;
++----------------+----------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition "root_partition" Resource Utilization by Entity                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+---------------------+----------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name ; Entity Name          ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+---------------------+----------------------+--------------+
+; |                          ; 120 (2)             ; 79 (0)                    ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; |                   ; alarmclock_top       ; altera_work  ;
+;    |ALARM_CONTROLLER|      ; 23 (23)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; ALARM_CONTROLLER    ; alarm_controller_fsm ; altera_work  ;
+;    |ALARM_REGISTER|        ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; ALARM_REGISTER      ; alarm_register       ; altera_work  ;
+;    |COUNTER|               ; 27 (27)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; COUNTER             ; counter              ; altera_work  ;
+;    |DISPLAY|               ; 47 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; DISPLAY             ; display_driver       ; altera_work  ;
+;       |LS_HR|              ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; DISPLAY|LS_HR       ; display_driver_func  ; altera_work  ;
+;       |LS_MIN|             ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; DISPLAY|LS_MIN      ; display_driver_func  ; altera_work  ;
+;       |MS_HR|              ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; DISPLAY|MS_HR       ; display_driver_func  ; altera_work  ;
+;       |MS_MIN|             ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; DISPLAY|MS_MIN      ; display_driver_func  ; altera_work  ;
+;    |KEY_REGISTER|          ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; KEY_REGISTER        ; key_reg              ; altera_work  ;
+;    |TIMING_GENERATOR|      ; 21 (21)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; TIMING_GENERATOR    ; timing_gen           ; altera_work  ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+---------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - ALARM_CONTROLLER|present_state                                                                                                                                                                                      ;
++--------------------------------+--------------------------------+------------------------------+-------------------------+--------------------------+--------------------------+--------------------------+-------------------------+
+; Name                           ; present_state.SET_CURRENT_TIME ; present_state.SET_ALARM_TIME ; present_state.KEY_ENTRY ; present_state.SHOW_ALARM ; present_state.KEY_STORED ; present_state.KEY_WAITED ; present_state.SHOW_TIME ;
++--------------------------------+--------------------------------+------------------------------+-------------------------+--------------------------+--------------------------+--------------------------+-------------------------+
+; present_state.SHOW_TIME        ; 0                              ; 0                            ; 0                       ; 0                        ; 0                        ; 0                        ; 0                       ;
+; present_state.KEY_WAITED       ; 0                              ; 0                            ; 0                       ; 0                        ; 0                        ; 1                        ; 1                       ;
+; present_state.KEY_STORED       ; 0                              ; 0                            ; 0                       ; 0                        ; 1                        ; 0                        ; 1                       ;
+; present_state.SHOW_ALARM       ; 0                              ; 0                            ; 0                       ; 1                        ; 0                        ; 0                        ; 1                       ;
+; present_state.KEY_ENTRY        ; 0                              ; 0                            ; 1                       ; 0                        ; 0                        ; 0                        ; 1                       ;
+; present_state.SET_ALARM_TIME   ; 0                              ; 1                            ; 0                       ; 0                        ; 0                        ; 0                        ; 1                       ;
+; present_state.SET_CURRENT_TIME ; 1                              ; 0                            ; 0                       ; 0                        ; 0                        ; 0                        ; 1                       ;
++--------------------------------+--------------------------------+------------------------------+-------------------------+--------------------------+--------------------------+--------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; State Machine - Summary                                                                    ;
++--------------------------------+------------------+------------+----------------+----------+
+; Name                           ; Number of States ; Using aclr ; Encoding Style ; Safeness ;
++--------------------------------+------------------+------------+----------------+----------+
+; ALARM_CONTROLLER|present_state ; 7                ; Yes        ; One-Hot        ; Not Safe ;
++--------------------------------+------------------+------------+----------------+----------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; ALARM_CONTROLLER|present_state~0      ; Lost fanout        ;
+; ALARM_CONTROLLER|present_state~1      ; Lost fanout        ;
+; ALARM_CONTROLLER|present_state~2      ; Lost fanout        ;
+; Total Number of Removed Registers = 3 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------------+
+; General Register Statistics for Partition "root_partition" ;
++----------------------------------------------+-------------+
+; Statistic                                    ; Value       ;
++----------------------------------------------+-------------+
+; Total registers                              ; 79          ;
+; Number of registers using Synchronous Clear  ; 15          ;
+; Number of registers using Synchronous Load   ; 5           ;
+; Number of registers using Asynchronous Clear ; 79          ;
+; Number of registers using Asynchronous Load  ; 0           ;
+; Number of registers using Clock Enable       ; 40          ;
+; Number of registers using Preset             ; 0           ;
++----------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+-------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ; Restructuring Performed ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+-------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; ALARM_CONTROLLER|count1[3]       ; Yes                     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; ALARM_CONTROLLER|count2[3]       ; Yes                     ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 0 LEs                ; 28 LEs                 ; Yes        ; TIMING_GENERATOR|clock_count[13] ; Yes                     ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; COUNTER|current_time_ms_hr[3]    ; Yes                     ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; COUNTER|current_time_ls_hr[3]    ; Yes                     ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; COUNTER|current_time_ms_min[1]   ; Yes                     ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; COUNTER|current_time_ls_min[1]   ; Yes                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; DISPLAY|LS_HR|lcd_display[0]     ; Yes                     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; ALARM_CONTROLLER|i79             ; Yes                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+-------------------------+
+
+
++------------------------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Partition "root_partition" ;
++------------------------+-----------------------------------------+
+; Type                   ; Count                                   ;
++------------------------+-----------------------------------------+
+; boundary_port          ; 42                                      ;
+; cyclone10gx_ff         ; 79                                      ;
+;     CLR                ; 22                                      ;
+;     CLR SCLR           ; 15                                      ;
+;     CLR SLD            ; 2                                       ;
+;     ENA CLR            ; 37                                      ;
+;     ENA CLR SLD        ; 3                                       ;
+; cyclone10gx_lcell_comb ; 120                                     ;
+;     arith              ; 14                                      ;
+;         1 data inputs  ; 14                                      ;
+;     extend             ; 2                                       ;
+;         7 data inputs  ; 2                                       ;
+;     normal             ; 104                                     ;
+;         0 data inputs  ; 2                                       ;
+;         1 data inputs  ; 1                                       ;
+;         2 data inputs  ; 8                                       ;
+;         3 data inputs  ; 9                                       ;
+;         4 data inputs  ; 12                                      ;
+;         5 data inputs  ; 28                                      ;
+;         6 data inputs  ; 44                                      ;
+;                        ;                                         ;
+; Number of carry chains ; 1                                       ;
+; Max carry chain length ; 14                                      ;
+;                        ;                                         ;
+; Max LUT depth          ; 3.00                                    ;
+; Average LUT depth      ; 2.20                                    ;
++------------------------+-----------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Synthesis Resource Usage Summary for Partition "root_partition" ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimate of Logic utilization (ALMs needed) ; 86                ;
+;                                             ;                   ;
+; Combinational ALUT usage for logic          ; 120               ;
+;     -- 7 input functions                    ; 2                 ;
+;     -- 6 input functions                    ; 44                ;
+;     -- 5 input functions                    ; 28                ;
+;     -- 4 input functions                    ; 12                ;
+;     -- <=3 input functions                  ; 34                ;
+;                                             ;                   ;
+; Dedicated logic registers                   ; 79                ;
+;                                             ;                   ;
+; I/O pins                                    ; 42                ;
+;                                             ;                   ;
+; Total DSP Blocks                            ; 0                 ;
+;     -- [A] Total Fixed Point DSP Blocks     ; 0                 ;
+;     -- [B] Total Floating Point DSP Blocks  ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; clock             ;
+; Maximum fan-out                             ; 79                ;
+; Total fan-out                               ; 872               ;
+; Average fan-out                             ; 3.62              ;
++---------------------------------------------+-------------------+
+
+
++--------------------+
+; Synthesis Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Synthesis
+    Info: Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+    Info: Processing started: Mon Jul 20 02:56:56 2020
+    Info: System process ID: 16175
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off alarmclock_top -c alarmclock_top
+Info: qis_default_flow_script.tcl version: #1
+Info: Initializing Synthesis...
+Info: Project = "alarmclock_top"
+Info: Revision = "alarmclock_top"
+Info: Analyzing source files
+Info: Elaborating from top-level entity "alarmclock_top"
+Info: Found 8 design entities
+Info: There are 11 partitions after elaboration.
+Info: Creating instance-specific data models and dissolving soft partitions
+Info (18299): Expanding entity and wildcard assignments.
+Info (18300): Expanded entity and wildcard assignments. Elapsed time: 00:00:00
+Info: found pre-synthesis snapshots for 1 partition(s)
+Info: Synthesizing partition "root_partition"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ms_hour[4]" is stuck at VCC File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 20
+    Warning (13410): Pin "ms_hour[5]" is stuck at VCC File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 20
+    Warning (13410): Pin "ms_hour[6]" is stuck at GND File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 20
+    Warning (13410): Pin "ms_hour[7]" is stuck at GND File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 20
+    Warning (13410): Pin "ls_hour[4]" is stuck at VCC File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 21
+    Warning (13410): Pin "ls_hour[5]" is stuck at VCC File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 21
+    Warning (13410): Pin "ls_hour[6]" is stuck at GND File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 21
+    Warning (13410): Pin "ls_hour[7]" is stuck at GND File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 21
+    Warning (13410): Pin "ms_min[4]" is stuck at VCC File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 22
+    Warning (13410): Pin "ms_min[5]" is stuck at VCC File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 22
+    Warning (13410): Pin "ms_min[6]" is stuck at GND File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 22
+    Warning (13410): Pin "ms_min[7]" is stuck at GND File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 22
+    Warning (13410): Pin "ls_min[4]" is stuck at VCC File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 23
+    Warning (13410): Pin "ls_min[5]" is stuck at VCC File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 23
+    Warning (13410): Pin "ls_min[6]" is stuck at GND File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 23
+    Warning (13410): Pin "ls_min[7]" is stuck at GND File: /home/himangshu/VLSI/Verilog/Maven_Silicon/AlarmClock/RTL/alarmclock_top_module.v Line: 23
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 195 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 153 logic cells
+Info: Successfully synthesized partition
+Info: Saving post-synthesis snapshots for 1 partition(s)
+Info: Quartus Prime Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 1382 megabytes
+    Info: Processing ended: Mon Jul 20 02:56:59 2020
+    Info: Elapsed time: 00:00:03
+    Info: System process ID: 16175
+
+

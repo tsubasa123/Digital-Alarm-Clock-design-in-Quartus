@@ -1,0 +1,70 @@
+Fitter Finalize Stage Report for alarmclock_top
+Mon Jul 20 02:58:45 2020
+Quartus Prime Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter HSLP Summary
+  3. Finalize Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------+
+; Fitter HSLP Summary                                                            ;
++--------------------------------------------------------+---------------+-------+
+; Resource                                               ; Usage         ; %     ;
++--------------------------------------------------------+---------------+-------+
+;                                                        ;               ;       ;
+; Programmable power technology high-speed tiles         ; 45 / 3,531    ; 1 %   ;
+; Programmable power technology low-power tiles          ; 3,486 / 3,531 ; 99 %  ;
+;     -- low-power tiles that are used by the design     ; 12 / 3,486    ; < 1 % ;
+;     -- unused tiles (low-power)                        ; 3,474 / 3,486 ; 100 % ;
+;                                                        ;               ;       ;
+; Programmable power technology high-speed LAB tiles     ; 45 / 2,642    ; 2 %   ;
+; Programmable power technology low-power LAB tiles      ; 2,597 / 2,642 ; 98 %  ;
+;     -- low-power LAB tiles that are used by the design ; 12 / 2,597    ; < 1 % ;
+;     -- unused LAB tiles (low-power)                    ; 2,585 / 2,597 ; 100 % ;
+;                                                        ;               ;       ;
++--------------------------------------------------------+---------------+-------+
+
+
++-------------------+
+; Finalize Messages ;
++-------------------+
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+    Info: Processing started: Mon Jul 20 02:57:00 2020
+    Info: System process ID: 16180
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off alarmclock_top -c alarmclock_top
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = alarmclock_top
+Info: Revision = alarmclock_top
+Info (11888): Total time spent on timing analysis during Post-Routing is 0.00 seconds.
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:00:09
+
+
